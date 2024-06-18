@@ -10,16 +10,16 @@ export const RegisterPage = () => {
         <Grid container>
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
-              label="Nombre Completo"
+              label="Full name"
               type="text"
-              placeholder="Ingresa tu nombre completo"
+              placeholder="Enter your full name"
               fullWidth
             />
           </Grid>
 
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
-              label="Correo"
+              label="Email"
               type="email"
               placeholder="email@google.com"
               fullWidth
@@ -28,7 +28,7 @@ export const RegisterPage = () => {
 
           <Grid item xs={12} sx={{ mt: 2 }}>
             <TextField
-              label="Contraseña"
+              label="Password"
               type="password"
               placeholder="Contraseña"
               fullWidth
@@ -37,7 +37,7 @@ export const RegisterPage = () => {
             <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>
               <Grid item xs={12}>
                 <Button variant="contained" fullWidth>
-                  Crear cuenta
+                  Create Account
                 </Button>
               </Grid>
             </Grid>
@@ -45,9 +45,9 @@ export const RegisterPage = () => {
         </Grid>
 
         <Grid container direction="row" justifyContent="end">
-          <Typography sx={{ mr: 1 }}>¿Ya tienes cuenta?</Typography>
+          <Typography sx={{ mr: 1 }}>Do you already have an account?</Typography>
           <Link component={RouterLink} color="inherit" to="/auth/login">
-            Ingresar
+            Sign In
           </Link>
         </Grid>
       </form>

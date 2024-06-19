@@ -31,6 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@fontsource/roboto", "npm:5.0.13"],\
           ["@mui/icons-material", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.15.20"],\
           ["@mui/material", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.15.20"],\
+          ["@reduxjs/toolkit", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.2.5"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
@@ -40,6 +41,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-refresh", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:0.4.7"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:18.3.1"],\
+          ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
           ["react-router-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:6.23.1"],\
           ["vite", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.3.1"]\
         ],\
@@ -1350,6 +1352,36 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@reduxjs/toolkit", [\
+      ["npm:2.2.5", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/@reduxjs-toolkit-npm-2.2.5-cdc856b5fc-10c0.zip/node_modules/@reduxjs/toolkit/",\
+        "packageDependencies": [\
+          ["@reduxjs/toolkit", "npm:2.2.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.2.5", {\
+        "packageLocation": "./.yarn/__virtual__/@reduxjs-toolkit-virtual-6c114da46b/7/home/bladimir/.yarn/berry/cache/@reduxjs-toolkit-npm-2.2.5-cdc856b5fc-10c0.zip/node_modules/@reduxjs/toolkit/",\
+        "packageDependencies": [\
+          ["@reduxjs/toolkit", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.2.5"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/react-redux", null],\
+          ["immer", "npm:10.1.1"],\
+          ["react", "npm:18.3.1"],\
+          ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
+          ["redux", "npm:5.0.1"],\
+          ["redux-thunk", "virtual:6c114da46b0baff030ee2ff8f9a1b669fb5b1b8e0af4a515b276e8072cae7d026e459a3bd4d08be61b172a5fe989022c00210d5b72748421d85ee6c0bc996fb5#npm:3.1.0"],\
+          ["reselect", "npm:5.1.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-redux",\
+          "@types/react",\
+          "react-redux",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@remix-run/router", [\
       ["npm:1.16.1", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/@remix-run-router-npm-1.16.1-cfa8039af0-10c0.zip/node_modules/@remix-run/router/",\
@@ -1602,6 +1634,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/react-transition-group", "npm:4.4.10"],\
           ["@types/react", "npm:18.3.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/use-sync-external-store", [\
+      ["npm:0.0.3", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/@types-use-sync-external-store-npm-0.0.3-875a91a914-10c0.zip/node_modules/@types/use-sync-external-store/",\
+        "packageDependencies": [\
+          ["@types/use-sync-external-store", "npm:0.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3174,6 +3215,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["immer", [\
+      ["npm:10.1.1", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/immer-npm-10.1.1-973ae10d09-10c0.zip/node_modules/immer/",\
+        "packageDependencies": [\
+          ["immer", "npm:10.1.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["import-fresh", [\
       ["npm:3.3.0", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/import-fresh-npm-3.3.0-3e34265ca9-10c0.zip/node_modules/import-fresh/",\
@@ -3580,6 +3630,7 @@ const RAW_RUNTIME_STATE =
           ["@fontsource/roboto", "npm:5.0.13"],\
           ["@mui/icons-material", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.15.20"],\
           ["@mui/material", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.15.20"],\
+          ["@reduxjs/toolkit", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.2.5"],\
           ["@types/react", "npm:18.3.3"],\
           ["@types/react-dom", "npm:18.3.0"],\
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
@@ -3589,6 +3640,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-refresh", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:0.4.7"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:18.3.1"],\
+          ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
           ["react-router-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:6.23.1"],\
           ["vite", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.3.1"]\
         ],\
@@ -4345,6 +4397,34 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-redux", [\
+      ["npm:9.1.2", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/react-redux-npm-9.1.2-8af4985431-10c0.zip/node_modules/react-redux/",\
+        "packageDependencies": [\
+          ["react-redux", "npm:9.1.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2", {\
+        "packageLocation": "./.yarn/__virtual__/react-redux-virtual-13ee130f57/7/home/bladimir/.yarn/berry/cache/react-redux-npm-9.1.2-8af4985431-10c0.zip/node_modules/react-redux/",\
+        "packageDependencies": [\
+          ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["@types/redux", null],\
+          ["@types/use-sync-external-store", "npm:0.0.3"],\
+          ["react", "npm:18.3.1"],\
+          ["redux", null],\
+          ["use-sync-external-store", "virtual:13ee130f5767da98b361e01fac1adacc9a9e870eff22e3659ea8d65176676b68dd7688592bb392c98850a520f316091673239d69ee62247c6e5bf8dfac0b784b#npm:1.2.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "@types/redux",\
+          "react",\
+          "redux"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-refresh", [\
       ["npm:0.14.2", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/react-refresh-npm-0.14.2-95df341b4d-10c0.zip/node_modules/react-refresh/",\
@@ -4435,6 +4515,37 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["redux", [\
+      ["npm:5.0.1", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/redux-npm-5.0.1-f8e6b1cb23-10c0.zip/node_modules/redux/",\
+        "packageDependencies": [\
+          ["redux", "npm:5.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["redux-thunk", [\
+      ["npm:3.1.0", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/redux-thunk-npm-3.1.0-6a8fdd3211-10c0.zip/node_modules/redux-thunk/",\
+        "packageDependencies": [\
+          ["redux-thunk", "npm:3.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6c114da46b0baff030ee2ff8f9a1b669fb5b1b8e0af4a515b276e8072cae7d026e459a3bd4d08be61b172a5fe989022c00210d5b72748421d85ee6c0bc996fb5#npm:3.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/redux-thunk-virtual-25a16fdbeb/7/home/bladimir/.yarn/berry/cache/redux-thunk-npm-3.1.0-6a8fdd3211-10c0.zip/node_modules/redux-thunk/",\
+        "packageDependencies": [\
+          ["redux-thunk", "virtual:6c114da46b0baff030ee2ff8f9a1b669fb5b1b8e0af4a515b276e8072cae7d026e459a3bd4d08be61b172a5fe989022c00210d5b72748421d85ee6c0bc996fb5#npm:3.1.0"],\
+          ["@types/redux", null],\
+          ["redux", "npm:5.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/redux",\
+          "redux"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["reflect.getprototypeof", [\
       ["npm:1.0.6", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/reflect.getprototypeof-npm-1.0.6-b33819c756-10c0.zip/node_modules/reflect.getprototypeof/",\
@@ -4469,6 +4580,15 @@ const RAW_RUNTIME_STATE =
           ["define-properties", "npm:1.2.1"],\
           ["es-errors", "npm:1.3.0"],\
           ["set-function-name", "npm:2.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["reselect", [\
+      ["npm:5.1.1", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/reselect-npm-5.1.1-667568f51c-10c0.zip/node_modules/reselect/",\
+        "packageDependencies": [\
+          ["reselect", "npm:5.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5081,6 +5201,28 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uri-js", "npm:4.4.1"],\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["use-sync-external-store", [\
+      ["npm:1.2.2", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/use-sync-external-store-npm-1.2.2-7923c915e1-10c0.zip/node_modules/use-sync-external-store/",\
+        "packageDependencies": [\
+          ["use-sync-external-store", "npm:1.2.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:13ee130f5767da98b361e01fac1adacc9a9e870eff22e3659ea8d65176676b68dd7688592bb392c98850a520f316091673239d69ee62247c6e5bf8dfac0b784b#npm:1.2.2", {\
+        "packageLocation": "./.yarn/__virtual__/use-sync-external-store-virtual-a68d13252e/7/home/bladimir/.yarn/berry/cache/use-sync-external-store-npm-1.2.2-7923c915e1-10c0.zip/node_modules/use-sync-external-store/",\
+        "packageDependencies": [\
+          ["use-sync-external-store", "virtual:13ee130f5767da98b361e01fac1adacc9a9e870eff22e3659ea8d65176676b68dd7688592bb392c98850a520f316091673239d69ee62247c6e5bf8dfac0b784b#npm:1.2.2"],\
+          ["@types/react", "npm:18.3.3"],\
+          ["react", "npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\

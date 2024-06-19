@@ -3,8 +3,10 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore/lite';
 
-const { API_KEY_FIREBASE, MESSAGING_SENDER_ID_FIREBASE, APP_ID_FIREBASE } = process.env
-console.log( API_KEY_FIREBASE, MESSAGING_SENDER_ID_FIREBASE, APP_ID_FIREBASE );
+const API_KEY_FIREBASE = import.meta.env.VITE_API_KEY_FIREBASE;
+const MESSAGING_SENDER_ID_FIREBASE = import.meta.env.VITE_MESSAGING_SENDER_ID_FIREBASE;
+const APP_ID_FIREBASE = import.meta.env.VITE_APP_ID_FIREBASE;
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries

@@ -8,7 +8,7 @@ import 'sweetalert2/dist/sweetalert2.css';
 
 import { useForm } from '../../hooks/useForm';
 import { ImageGallery } from '../components';
-import { setActiveNote, startSaveNote } from '../../store/journal';
+import { setActiveNote, startSaveNote, startUploadingFiles } from '../../store/journal';
 
 
 export const NoteView = () => {
@@ -45,7 +45,7 @@ export const NoteView = () => {
     if ( target.files.length === 0 ) return;
     
     const files = target.files;
-    // dispatch( startUploadingFiles( target.files ) );
+    dispatch( startUploadingFiles( target.files ) );
   };
   
   return (

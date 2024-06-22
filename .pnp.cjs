@@ -44,6 +44,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:18.3.1"],\
           ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
           ["react-router-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:6.23.1"],\
+          ["sweetalert2", "npm:11.12.0"],\
           ["vite", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.3.1"]\
         ],\
         "linkType": "SOFT"\
@@ -4923,6 +4924,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:18.3.1"],\
           ["react-redux", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:9.1.2"],\
           ["react-router-dom", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:6.23.1"],\
+          ["sweetalert2", "npm:11.12.0"],\
           ["vite", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:5.3.1"]\
         ],\
         "linkType": "SOFT"\
@@ -6364,6 +6366,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-10c0.zip/node_modules/supports-preserve-symlinks-flag/",\
         "packageDependencies": [\
           ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sweetalert2", [\
+      ["npm:11.12.0", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/sweetalert2-npm-11.12.0-3c5c6186ec-10c0.zip/node_modules/sweetalert2/",\
+        "packageDependencies": [\
+          ["sweetalert2", "npm:11.12.0"]\
         ],\
         "linkType": "HARD"\
       }]\

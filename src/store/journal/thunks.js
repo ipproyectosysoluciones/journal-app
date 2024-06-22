@@ -56,4 +56,4 @@ export const startSaveNote = () => {
 
     dispatch( updateNote( note ) );
   };
-}
+};

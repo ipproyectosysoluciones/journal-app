@@ -1,3 +1,6 @@
+/* Este componente define el diseño de la página de autenticación, que incluye un contenedor centralizado con un formulario de autenticación.
+Recibe dos propiedades: "children" para renderizar el contenido dentro del diseño y "title" para mostrar un título opcional. */
+
 import { Grid, Typography } from '@mui/material';
 
 

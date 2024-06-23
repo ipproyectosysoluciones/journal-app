@@ -1,9 +1,13 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+/* Importamos diferentes pesos de la fuente Roboto para su uso en la aplicación.*/
+import '@fontsource/roboto/300.css'; /* Fuente Roboto con peso 300 (light) */
+import '@fontsource/roboto/400.css'; /* Fuente Roboto con peso 400 (normal) */
+import '@fontsource/roboto/500.css'; /* Fuente Roboto con peso 500 (medium) */
+import '@fontsource/roboto/700.css'; /* Fuente Roboto con peso 700 (bold) */
 
-
+/* Definimos una clase CSS llamada "box-shadow" */
 .box-shadow {
+  /*  Aplicamos una sombra a los elementos que utilizan esta clase
+   La sombra tiene un desplazamiento en el eje X de 0px, en el eje Y de 5px
+   y un desenfoque de 5px. El color de la sombra es negro con una opacidad del 20%. */
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }

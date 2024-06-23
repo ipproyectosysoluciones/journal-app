@@ -1,9 +1,12 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore/lite';
-import.meta.env;
+// Este archivo inicializa y configura Firebase en la aplicación web.
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app'; // Importa la función de inicialización de Firebase
+import { getAuth } from 'firebase/auth'; // Importa la función de autenticación de Firebase
+import { getFirestore } from 'firebase/firestore/lite'; // Importa la función de base de datos Firestore de Firebase Lite
+import.meta.env; // Importa la configuración del entorno
+
+// Obtiene las variables de entorno necesarias
 const API_KEY_FIREBASE = import.meta.env.VITE_API_KEY_FIREBASE;
 // const AUTH_DOMAIN = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
 // const PROJECT_ID_FIREBASE = import.meta.env.VITE_PROJECT_ID_FIREBASE;
@@ -27,5 +30,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const FirebaseApp = initializeApp( firebaseConfig );
-export const FirebaseAuth = getAuth( FirebaseApp );
-export const FirebaseDB = getFirestore( FirebaseApp );
+export const FirebaseAuth = getAuth( FirebaseApp ); // Obtiene la instancia de autenticación de Firebase
+export const FirebaseDB = getFirestore( FirebaseApp ); // Obtiene la instancia de base de datos Firestore de Firebase

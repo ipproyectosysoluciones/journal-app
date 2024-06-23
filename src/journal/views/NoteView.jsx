@@ -1,75 +1,61 @@
+// Importaciones de hooks y utilidades necesarias desde React y otras librerías
 import { useMemo, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+// Importaciones de componentes de Material UI y SweetAlert2
 import { Button, Grid, TextField, Typography, IconButton } from '@mui/material';
 import { DeleteOutline, SaveOutlined, UploadOutlined  } from '@mui/icons-material';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
 
+// Importaciones de hooks personalizados y acciones de Redux
 import { useForm } from '../../hooks/useForm';
 import { ImageGallery } from '../components';
 import { setActiveNote, startDeletingNote, startSaveNote, startUploadingFiles } from '../../store/journal';
 
-
+// Componente NoteView
 export const NoteView = () => {
 
-  const dispatch = useDispatch();
-  const { active:note, messageSaved, isSaving } = useSelector( state => state.journal );
+  const dispatch = useDispatch(); // Hook para despachar acciones de Redux
+  const { active:note, messageSaved, isSaving } = useSelector( state => state.journal ); // Hook para acceder al estado de Redux
 
-  const { date, body, title, onInputChange, formState } = useForm( note );
+  const { date, body, title, onInputChange, formState } = useForm( note ); // Hook personalizado para manejar formularios
 
+  // Memoiza la conversión de la fecha para evitar recalcular en cada renderizado
   const dateString = useMemo( () => {
     const newDate = new Date( date );
-
     return newDate.toUTCString();
   },[ date ]);
 
-  const fileInputRef = useRef();
+  const fileInputRef = useRef(); // Referencia al input de archivos
 
+  // Efecto para actualizar la nota activa en el store cada vez que cambie el estado del formulario
   useEffect(() => {
     dispatch( setActiveNote( formState ) );
   }, [ formState ]);
 
+  // Efecto para mostrar una alerta cuando se guarda un mensaje
   useEffect(() => {
     if ( messageSaved.length > 0 ) {
       Swal.fire( 'Updated note', messageSaved, 'success' );
     }
-
   }, [ messageSaved ]);
-  
+
+  // Función para guardar la nota actual
   const onSaveNote = () => {
     dispatch( startSaveNote() );
   };
 
+  // Función para manejar el cambio de archivos en el input
   const onFileInputChange = ({ target }) => {
     if ( target.files.length === 0 ) return;
-    
     const files = target.files;
     dispatch( startUploadingFiles( target.files ) );
   };
 
+  // Función para eliminar la nota actual
   const onDelete = () => {
-
     dispatch( startDeletingNote() );
-    // Swal.fire({
-    //   title: 'Are you sure?',
-    //   text: "You won't be able to revert this!",
-    //   icon: 'warning',
-    //   showCancelButton: true,
-    //   confirmButtonColor: '#3085d6',
-    //   cancelButtonColor: '#d33',
-    //   confirmButtonText: 'Yes, delete it!'
-    // }).then(( result ) => {
-    //   if ( result.isConfirmed ) {
-    //     Swal.fire(
-    //       'Deleted!',
-    //       'Your note has been deleted.',
-    //      'success'
-    //     );
-
-    //     dispatch( setActiveNote( {} ) );
-    //   }
-    // });
   };
   
   return (
@@ -84,11 +70,12 @@ export const NoteView = () => {
       className='animate__animated animate__fadeIn animate__faster'
     >
       <Grid item>
+        {/* Muestra la fecha de la nota */}
         <Typography fontSize={ 39 } fontWeight='Light'>{ dateString }</Typography>
       </Grid>
 
       <Grid item>
-
+        {/* Input para seleccionar archivos, oculto por defecto */}
         <input 
           type="file" 
           multiple
@@ -97,6 +84,7 @@ export const NoteView = () => {
           style={{ display: 'none' }}
         />
 
+        {/* Botón para subir archivos */}
         <IconButton
           color="primary"
           disabled={ isSaving }
@@ -105,6 +93,7 @@ export const NoteView = () => {
           <UploadOutlined />
         </IconButton>
         
+        {/* Botón para guardar la nota */}
         <Button 
           disabled={ isSaving }
           onClick={ onSaveNote }
@@ -117,6 +106,7 @@ export const NoteView = () => {
       </Grid>
 
       <Grid container>
+        {/* Campo de texto para el título de la nota */}
         <TextField 
           type='text'
           variant='filled'
@@ -132,6 +122,7 @@ export const NoteView = () => {
           onChange={ onInputChange }
         />
 
+        {/* Campo de texto para el cuerpo de la nota */}
         <TextField 
           type='text'
           variant='filled'
@@ -147,6 +138,7 @@ export const NoteView = () => {
       </Grid>
 
       <Grid container justifyContent="end">
+        {/* Botón para eliminar la nota */}
         <Button
           onClick={ onDelete }
           sx={{ mt: 2 }}

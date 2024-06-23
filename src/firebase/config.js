@@ -4,15 +4,15 @@
 import { initializeApp } from 'firebase/app'; // Importa la función de inicialización de Firebase
 import { getAuth } from 'firebase/auth'; // Importa la función de autenticación de Firebase
 import { getFirestore } from 'firebase/firestore/lite'; // Importa la función de base de datos Firestore de Firebase Lite
-import.meta.env; // Importa la configuración del entorno
+// import.meta.env; // Importa la configuración del entorno
 
 // Obtiene las variables de entorno necesarias
-const API_KEY_FIREBASE = import.meta.env.VITE_API_KEY_FIREBASE;
+// const API_KEY_FIREBASE = import.meta.env.VITE_API_KEY_FIREBASE;
 // const AUTH_DOMAIN = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
 // const PROJECT_ID_FIREBASE = import.meta.env.VITE_PROJECT_ID_FIREBASE;
 // const STORAGE_BUCKET = import.meta.env.VITE_FIREBASE_STORAGE_BUCKET;
-const MESSAGING_SENDER_ID_FIREBASE = import.meta.env.VITE_MESSAGING_SENDER_ID_FIREBASE;
-const APP_ID_FIREBASE = import.meta.env.VITE_APP_ID_FIREBASE;
+// const MESSAGING_SENDER_ID_FIREBASE = import.meta.env.VITE_MESSAGING_SENDER_ID_FIREBASE;
+// const APP_ID_FIREBASE = import.meta.env.VITE_APP_ID_FIREBASE;
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -20,12 +20,12 @@ const APP_ID_FIREBASE = import.meta.env.VITE_APP_ID_FIREBASE;
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: API_KEY_FIREBASE,
+  apiKey: "AIzaSyA_4c6nohL90zRQWrTVheDvwZJ2JKXkeo0",
   authDomain: "journal-app-f6e24.firebaseapp.com",
   projectId: "journal-app-f6e24",
   storageBucket: "journal-app-f6e24.appspot.com",
-  messagingSenderId: MESSAGING_SENDER_ID_FIREBASE,
-  appId: APP_ID_FIREBASE
+  messagingSenderId: "996177653463",
+  appId: "1:996177653463:web:6d70cdae9700f14a780a92"
 };
 
 // Initialize Firebase

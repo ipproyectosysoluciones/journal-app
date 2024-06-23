@@ -57,7 +57,7 @@ export const startLogout = () => {
     
     const result = await logoutFirebase(); // Cierra sesión de Firebase
 
-    if ( !result.ok ) return dispatch( logout( result.errorMessage ) ); // Si hay un error, cierra sesión con el mensaje de error proporcionado
+    // if ( !result.ok ) return dispatch( logout( result.errorMessage ) ); // Si hay un error, cierra sesión con el mensaje de error proporcionado
     dispatch( clearNotesLogout() ); // Limpia las notas al cerrar sesión
     dispatch( logout( result ) ); // Cierra sesión exitosamente
   };

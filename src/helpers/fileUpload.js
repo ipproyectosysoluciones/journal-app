@@ -1,5 +1,6 @@
+import.meta.env;
 
-const baseUrl = import.meta.env.VITE_APP_CLOUDINARY
+const baseUrl = import.meta.env.VITE_CLOUDINARY_URL
 
 export const fileUpload = async( file ) => {
 

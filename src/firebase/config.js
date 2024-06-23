@@ -2,8 +2,12 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore/lite';
+import.meta.env;
 
 const API_KEY_FIREBASE = import.meta.env.VITE_API_KEY_FIREBASE;
+// const AUTH_DOMAIN = import.meta.env.VITE_FIREBASE_AUTH_DOMAIN;
+// const PROJECT_ID_FIREBASE = import.meta.env.VITE_PROJECT_ID_FIREBASE;
+// const STORAGE_BUCKET = import.meta.env.VITE_FIREBASE_STORAGE_BUCKET;
 const MESSAGING_SENDER_ID_FIREBASE = import.meta.env.VITE_MESSAGING_SENDER_ID_FIREBASE;
 const APP_ID_FIREBASE = import.meta.env.VITE_APP_ID_FIREBASE;
 

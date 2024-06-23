@@ -43,6 +43,9 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
           ["babel-jest", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:29.7.0"],\
+          ["cloudinary", "npm:2.2.0"],\
+          ["esbuild", "npm:0.21.5"],\
+          ["esbuild-jest-transform", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:7.34.2"],\
           ["eslint-plugin-react-hooks", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.6.2"],\
@@ -6605,6 +6608,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cloudinary", [\
+      ["npm:2.2.0", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/cloudinary-npm-2.2.0-f44c177a41-10c0.zip/node_modules/cloudinary/",\
+        "packageDependencies": [\
+          ["cloudinary", "npm:2.2.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["q", "npm:1.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["clsx", [\
       ["npm:2.1.1", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/clsx-npm-2.1.1-96125b98be-10c0.zip/node_modules/clsx/",\
@@ -7291,6 +7305,28 @@ const RAW_RUNTIME_STATE =
           ["@esbuild/win32-arm64", "npm:0.21.5"],\
           ["@esbuild/win32-ia32", "npm:0.21.5"],\
           ["@esbuild/win32-x64", "npm:0.21.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["esbuild-jest-transform", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/esbuild-jest-transform-npm-2.0.0-d1a1cbe65d-10c0.zip/node_modules/esbuild-jest-transform/",\
+        "packageDependencies": [\
+          ["esbuild-jest-transform", "npm:2.0.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0", {\
+        "packageLocation": "./.yarn/__virtual__/esbuild-jest-transform-virtual-0c0b26abd9/7/home/bladimir/.yarn/berry/cache/esbuild-jest-transform-npm-2.0.0-d1a1cbe65d-10c0.zip/node_modules/esbuild-jest-transform/",\
+        "packageDependencies": [\
+          ["esbuild-jest-transform", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0"],\
+          ["@types/esbuild", null],\
+          ["esbuild", "npm:0.21.5"]\
+        ],\
+        "packagePeers": [\
+          "@types/esbuild",\
+          "esbuild"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9339,6 +9375,9 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.3.0"],\
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
           ["babel-jest", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:29.7.0"],\
+          ["cloudinary", "npm:2.2.0"],\
+          ["esbuild", "npm:0.21.5"],\
+          ["esbuild-jest-transform", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:7.34.2"],\
           ["eslint-plugin-react-hooks", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.6.2"],\
@@ -10439,6 +10478,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/pure-rand-npm-6.1.0-497ea3fc37-10c0.zip/node_modules/pure-rand/",\
         "packageDependencies": [\
           ["pure-rand", "npm:6.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["q", [\
+      ["npm:1.5.1", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/q-npm-1.5.1-a28b3cfeaf-10c0.zip/node_modules/q/",\
+        "packageDependencies": [\
+          ["q", "npm:1.5.1"]\
         ],\
         "linkType": "HARD"\
       }]\

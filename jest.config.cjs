@@ -9,5 +9,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+    '^.+\\.js$': 'esbuild-jest-transform',
   },
+  testTimeout: 10000,
 };

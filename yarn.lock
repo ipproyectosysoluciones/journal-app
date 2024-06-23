@@ -4162,6 +4162,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cloudinary@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "cloudinary@npm:2.2.0"
+  dependencies:
+    lodash: "npm:^4.17.21"
+    q: "npm:^1.5.1"
+  checksum: 10c0/e9d2d23574c1b416060e67f465859ab4399796cac3fa3b911c0e28427053e988f0614baf9512383eb7e9e22aeb99e77cd76a392547bb6c7ea022cbfaaf0a9bf0
+  languageName: node
+  linkType: hard
+
 "clsx@npm:^2.1.0":
   version: 2.1.1
   resolution: "clsx@npm:2.1.1"
@@ -4728,7 +4738,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.21.3":
+"esbuild-jest-transform@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "esbuild-jest-transform@npm:2.0.0"
+  peerDependencies:
+    esbuild: ^0.17.4
+  checksum: 10c0/eb05561259b7730e17ca1cac658d94aff11921ee89e759b41dc5aa16a5c7ca0c27fc29005a607da32275582db8634e5351a61bcb63badc75bab41ff5e4581589
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:^0.21.3, esbuild@npm:^0.21.5":
   version: 0.21.5
   resolution: "esbuild@npm:0.21.5"
   dependencies:
@@ -6573,6 +6592,9 @@ __metadata:
     "@types/react-dom": "npm:^18.2.22"
     "@vitejs/plugin-react": "npm:^4.2.1"
     babel-jest: "npm:^29.7.0"
+    cloudinary: "npm:^2.2.0"
+    esbuild: "npm:^0.21.5"
+    esbuild-jest-transform: "npm:^2.0.0"
     eslint: "npm:^8.57.0"
     eslint-plugin-react: "npm:^7.34.1"
     eslint-plugin-react-hooks: "npm:^4.6.0"
@@ -7554,6 +7576,13 @@ __metadata:
   version: 6.1.0
   resolution: "pure-rand@npm:6.1.0"
   checksum: 10c0/1abe217897bf74dcb3a0c9aba3555fe975023147b48db540aa2faf507aee91c03bf54f6aef0eb2bf59cc259a16d06b28eca37f0dc426d94f4692aeff02fb0e65
+  languageName: node
+  linkType: hard
+
+"q@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "q@npm:1.5.1"
+  checksum: 10c0/7855fbdba126cb7e92ef3a16b47ba998c0786ec7fface236e3eb0135b65df36429d91a86b1fff3ab0927b4ac4ee88a2c44527c7c3b8e2a37efbec9fe34803df4
   languageName: node
   linkType: hard
 

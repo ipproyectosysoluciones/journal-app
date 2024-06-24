@@ -9,4 +9,5 @@ export const store = configureStore({
     auth: authSlice.reducer, // Utilizamos el reducer del slice auth para manejar el estado de autenticación.
     journal: journalSlice.reducer, // Utilizamos el reducer del slice journal para manejar el estado del diario.
   },
+  devTools: false
 });

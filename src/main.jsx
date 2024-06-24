@@ -1,7 +1,7 @@
 import React from 'react'; // Importamos React para poder utilizar JSX y componentes.
 import ReactDOM from 'react-dom/client'; // Importamos ReactDOM para renderizar la aplicación en el DOM.
 import { Provider } from 'react-redux'; // Importamos el Provider de react-redux para proporcionar el store de Redux a la aplicación.
-import { BrowserRouter } from 'react-router-dom'; // Importamos BrowserRouter de react-router-dom para manejar el enrutamiento en la aplicación.
+import { BrowserRouter, HashRouter } from 'react-router-dom'; // Importamos BrowserRouter de react-router-dom para manejar el enrutamiento en la aplicación.
 
 import { JournalApp } from './JournalApp'; // Importamos el componente principal de la aplicación, JournalApp.
 import { store } from './store'; // Importamos el store configurado de Redux.
@@ -15,10 +15,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* Provider proporciona el store de Redux a todos los componentes de la aplicación */}
     <Provider store={ store }>
       {/* BrowserRouter permite el manejo de rutas en la aplicación */}
-      <BrowserRouter>
+      <HashRouter>
         {/* JournalApp es el componente principal de la aplicación */}
         <JournalApp />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
 );

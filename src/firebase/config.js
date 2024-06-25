@@ -19,13 +19,25 @@ import { getFirestore } from 'firebase/firestore/lite'; // Importa la función d
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// Dev/Prod
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA_4c6nohL90zRQWrTVheDvwZJ2JKXkeo0",
+//   authDomain: "journal-app-f6e24.firebaseapp.com",
+//   projectId: "journal-app-f6e24",
+//   storageBucket: "journal-app-f6e24.appspot.com",
+//   messagingSenderId: "996177653463",
+//   appId: "1:996177653463:web:6d70cdae9700f14a780a92"
+// };
+
+// Testing
 const firebaseConfig = {
-  apiKey: "AIzaSyA_4c6nohL90zRQWrTVheDvwZJ2JKXkeo0",
-  authDomain: "journal-app-f6e24.firebaseapp.com",
-  projectId: "journal-app-f6e24",
-  storageBucket: "journal-app-f6e24.appspot.com",
-  messagingSenderId: "996177653463",
-  appId: "1:996177653463:web:6d70cdae9700f14a780a92"
+  apiKey: "AIzaSyAVLXBJSkAndt77r0Ny0CcZB6n4QOq9pRI",
+  authDomain: "listacurso-26072.firebaseapp.com",
+  databaseURL: "https://listacurso-26072.firebaseio.com",
+  projectId: "listacurso-26072",
+  storageBucket: "listacurso-26072.appspot.com",
+  messagingSenderId: "1096110261538",
+  appId: "1:1096110261538:web:33808441a4327a1b0cd17b"
 };
 
 // Initialize Firebase

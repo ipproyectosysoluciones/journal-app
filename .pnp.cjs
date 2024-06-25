@@ -44,6 +44,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
           ["babel-jest", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:29.7.0"],\
           ["cloudinary", "npm:2.2.0"],\
+          ["dotenv", "npm:16.4.5"],\
           ["esbuild", "npm:0.21.5"],\
           ["esbuild-jest-transform", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0"],\
           ["eslint", "npm:8.57.0"],\
@@ -7046,6 +7047,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dotenv", [\
+      ["npm:16.4.5", {\
+        "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/dotenv-npm-16.4.5-bcb20eb95d-10c0.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:16.4.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["eastasianwidth", [\
       ["npm:0.2.0", {\
         "packageLocation": "../../../../../../home/bladimir/.yarn/berry/cache/eastasianwidth-npm-0.2.0-c37eb16bd1-10c0.zip/node_modules/eastasianwidth/",\
@@ -9376,6 +9386,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-react", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:4.3.1"],\
           ["babel-jest", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:29.7.0"],\
           ["cloudinary", "npm:2.2.0"],\
+          ["dotenv", "npm:16.4.5"],\
           ["esbuild", "npm:0.21.5"],\
           ["esbuild-jest-transform", "virtual:3c3d88674e47fd853033577f3a1a7a5e600366243e2565795d67bea335ca083d7be5161a78ba0ba1502042ce76849312bb6c46cb7115394919bcba2b86d91782#npm:2.0.0"],\
           ["eslint", "npm:8.57.0"],\

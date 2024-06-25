@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2e5e6728-3aae-40cb-ad6a-9c41bc4e03a8/deploy-status)](https://app.netlify.com/sites/journal-app-ipproyectosysoluciones/deploys)
-
 # JournalApp
 
 JournalApp es un proyecto desarrollado con React 18 y Vite en el curso de [React: de cero a experto (Hooks y MERN) de Fernando Herrera](https://www.udemy.com/share/103dsU3@EL7dDbJv4ZCT0yrx_xOQSCDUDf17kCQCUsw0L-b4I65HSBMzL1-YuSDr3pai9BBX/), utilizando Yarn como gestor de paquetes. Este README describe las características del proyecto y proporciona instrucciones para clonar y ejecutar el proyecto para fines de desarrollo.

@@ -1,8 +1,8 @@
 // Este archivo se encarga de cargar un archivo a un servicio de almacenamiento en la nube, en este caso, Cloudinary.
 
-// import.meta.env; // Accede a las variables de entorno definidas en Vite
+import { getEnvironments } from "./getEnvironments";
 
-// const baseUrl = import.meta.env.VITE_CLOUDINARY_URL // Obtiene la URL base de Cloudinary desde las variables de entorno
+const { VITE_CLOUDINARY_URL } = getEnvironments();
 
 export const fileUpload = async( file ) => {
   // Esta función asincrónica carga un archivo a Cloudinary
@@ -12,7 +12,7 @@ export const fileUpload = async( file ) => {
 
   if ( !file ) return null;
 
-  const cloudUrl = 'https://api.cloudinary.com/v1_1/dhouj4ise/upload'; // URL de Cloudinary
+  const cloudUrl = VITE_CLOUDINARY_URL; // URL de Cloudinary
 
   const formData = new FormData(); // Crea un objeto FormData para enviar el archivo al servidor
   formData.append( 'upload_preset', 'journal-app' ); // Añade el preset de carga de Cloudinary

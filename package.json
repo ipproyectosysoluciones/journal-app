@@ -37,6 +37,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "babel-jest": "^29.7.0",
     "cloudinary": "^2.2.0",
+    "dotenv": "^16.4.5",
     "esbuild": "^0.21.5",
     "esbuild-jest-transform": "^2.0.0",
     "eslint": "^8.57.0",

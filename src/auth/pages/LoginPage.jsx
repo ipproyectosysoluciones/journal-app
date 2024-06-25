@@ -36,7 +36,7 @@ export const LoginPage = () => {
 
   // Función para iniciar sesión con Google
   const omGoogleSignIn = () => {
-    console.log('onGoogleSignIn');
+    // console.log('onGoogleSignIn');
     dispatch( startGoogleSignIn() ); // Despacha la acción de inicio de sesión con Google
   };
 
@@ -44,6 +44,7 @@ export const LoginPage = () => {
   return (
     <AuthLayout title="Login"> {/* Renderiza el componente AuthLayout con el título "Login" */}
       <form 
+        aria-label='submit-form'
         onSubmit={ onSubmit } // Maneja el envío del formulario
         className='animate__animated animate__fadeIn animate__faster' // Agrega clases para animación
       >
@@ -68,6 +69,9 @@ export const LoginPage = () => {
               placeholder="Password"
               fullWidth
               name="password"
+              inputProps={{
+                'data-testid': 'password'
+              }}
               value={ password }
               onChange={ onInputChange }
             />

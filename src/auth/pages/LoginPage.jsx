@@ -36,7 +36,7 @@ export const LoginPage = () => {
 
   // Función para iniciar sesión con Google
   const omGoogleSignIn = () => {
-    // console.log('onGoogleSignIn');
+    console.log('onGoogleSignIn');
     dispatch( startGoogleSignIn() ); // Despacha la acción de inicio de sesión con Google
   };
 
@@ -99,6 +99,7 @@ export const LoginPage = () => {
               </Grid>
               <Grid item xs={12} sm={6}>
                 <Button 
+                  aria-label='google-button'
                   disabled={ isAuthenticating }
                   variant="contained" 
                   fullWidth

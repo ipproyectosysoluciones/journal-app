@@ -1,8 +1,8 @@
 /* Importamos diferentes pesos de la fuente Roboto para su uso en la aplicación.*/
-@import '~@fontsource/roboto/300.css'; /* Fuente Roboto con peso 300 (light) */
-@import '~@fontsource/roboto/400.css'; /* Fuente Roboto con peso 400 (normal) */
-@import '~@fontsource/roboto/500.css'; /* Fuente Roboto con peso 500 (medium) */
-@import '~@fontsource/roboto/700.css'; /* Fuente Roboto con peso 700 (bold) */
+@import '@fontsource/roboto/300.css'; /* Fuente Roboto con peso 300 (light) */
+@import '@fontsource/roboto/400.css'; /* Fuente Roboto con peso 400 (normal) */
+@import '@fontsource/roboto/500.css'; /* Fuente Roboto con peso 500 (medium) */
+@import '@fontsource/roboto/700.css'; /* Fuente Roboto con peso 700 (bold) */
 
 /* Definimos una clase CSS llamada "box-shadow" */
 .box-shadow {
